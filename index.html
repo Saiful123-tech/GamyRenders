@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+      <main>
+        <center>
+        <div class="WelcomeScreen">
+           
+            <h2>Guess the Random Number between 1-100</h2>
+            <img src="img.jpg" alt="" srcset="">
+            <section class="eventSection">
+                <p><b>Select Difficulty Level</b></p>
+                <br>
+                <div class="button-wrapper">
+               <button class="button-29"role="button" onclick="GamePage(10)">Easy 10 attempt</button>
+               <br><br>
+               <button class="button-29"role="button" onclick="GamePage(5)">Hard 5 attempt</button>
+            </div>
+            </section>
+       
+        </div>
+    </center>
+
+   <!--Second Screen-->
+   <center>
+  <div class="GameArea hide">
+    <br>
+     <div class="Dynamic-content hide">
+    
+    <h1 class="rightoutput hide">Its Correct </h1>
+    
+    <h1 class="wrongoutput hide">Game Over </h1> 
+    <br>
+    <img src="happy.png" alt="" class="happy-image hide">
+    <img src="sad.png" alt="" class="sad-image hide">
+    <br><br>
+    <button class="button-29 hide"role="button" id="newGame">New Game</button>
+    </div>
+    <section class="gamecontent">
+        <br>
+        <h1 class="heading">Your Guess</h1>
+        <input type="text" id="fname" name="firstname" class="input" placeholder="Guess No.">
+        <h2>Number of previous Attempt</h2>
+        <br>
+        <h3 class="previous-attempt"></h3>
+        <br>
+        <h2>Number of Previous Guess</h2>
+        <br>
+        <h3 class="previous-guess"></h3>
+    </section>
+
+  </div>
+</center>
+
+
+      </main>
+</body>
+<script src="index.js"></script>
+</html>
